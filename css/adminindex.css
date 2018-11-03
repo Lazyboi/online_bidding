@@ -1,0 +1,335 @@
+body {
+	width:					1200px;
+	height:					 auto;
+	margin:					auto;
+	padding:				auto;
+	overflow-x:				hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color:#ccc;
+}
+
+#header { 
+    
+    height:40px;
+	width: 1200px;
+    background: #881614;
+	position:fixed;
+	Box-shadow: 3px 3px 3px rgba(0, 0, 0, .30);
+	z-index: 3;
+	
+}
+#content {
+background: url('imgbg.jpg');
+position:relative;
+height:100%;
+}
+
+
+#footer {
+	
+	height:300px;
+	width: 1200px;
+    background: #FFFFDB;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+	bottom: 0px;
+}
+div {
+	
+	position:relative;
+}
+/*header */
+.header-nav li {
+	position:relative;
+	left:  200px;
+	top: -15px;
+	margin: 5px;
+	font-family: calibri;
+	list-style: none;	
+	font-size: 13px;
+	color: #fefefe;	
+	float:left;
+		
+}
+
+a.name {
+
+color:#E9E9E9;
+}
+
+
+li.welcome{
+	font-size:16px;
+	position:absolute;
+	left:70px;
+	top:-10px;
+	z-index:1;
+}
+li.welcome a.name:hover{
+    text-decoration:underline;
+	color:#fefefe;
+}
+a {
+	
+	text-decoration: none;
+	color: #E9E9E9;
+	
+}
+a.sign {
+	color: #E9E9E9;
+	left: 20px;
+	
+}
+a.sign:hover{
+	
+	text-decoration:underline;
+}
+
+/**headestop*/
+
+
+
+article.date {
+	font-size:15px;
+	position:absolute;
+	top:35px;
+	left:90px;
+	color:#111;
+}
+div.all:hover {
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+div.main-content {
+    
+	font-family:calibri;
+	height:50%;
+
+}
+
+div.top-content{
+
+	background-color:fefefe;
+	height:70px;
+	width:1200px;
+	top:180px;
+	position:absolute;
+	z-index:1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+}
+div.top-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.top-content li  {
+    float: left;
+	
+
+}
+
+div.top-content li  img{
+   color:#b5152f;
+   
+position:relative;
+left:75px;
+
+
+
+	
+
+}
+div.top-content img.message {
+	width:60px;
+	height:60px;
+	z-index:4;
+	cursor:pointer;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:35px;
+	padding-right:35px;
+	
+}
+div.top-content img:hover{
+	
+	z-index:4;
+	background-color:#b5152f; 
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:35px;
+	padding-right:35px;
+
+	
+}
+
+div.top-content img:link{
+	
+	z-index:4;
+	background-color:#b5152f; 
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:35px;
+	padding-right:35px;
+	
+}
+
+div.top-content img.request {
+	width:50px;
+	height:50px;
+	z-index:5;
+	top:px;
+	position:relative;
+	cursor:pointer;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:35px;
+	padding-right:35px;
+}
+div.top-content img.home{
+	width:50px;
+	height:50px;
+	z-index:5;	
+	top:0px;
+	position:relative;
+    cursor:pointer;
+    padding-top:10px;
+	padding-bottom:10px;
+	padding-left:35px;
+	padding-right:35px;
+	background-color:#b5152f;
+
+}
+
+img.logo{
+	top:45px;
+	position:absolute;
+	left:70px;
+}
+/*ffootr*/
+
+img.footerlogo{
+	width: 90px;
+	height: 90px;
+	position:absolute;
+	bottom:150px;
+	left: 150px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	
+}
+
+h1.one {
+	
+	font-size: 18px;
+	position:absolute;
+	bottom:70px;
+	font-family: century gothic;
+	color:#333;
+	left: 115px;
+	
+}
+h2.links{
+	
+	font-size: 15px;
+	position:absolute;
+	bottom:-2px;
+	font-family: century gothic;
+	color:#333;
+	left: 340px;
+}
+h2.comment {
+	font-size: 15px;
+	position:absolute;
+	bottom:-2px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+.nav-footer ul li{
+	
+	position:relative;
+	bottom:-80px;
+	font-family: century gothic;
+	color:#333;
+	left: 310px;
+	font-size: 13px;
+	margin: 7px;
+}
+
+.nav-footer ul li:hover{
+	
+	position:relative;
+	bottom:-80px;
+	font-family: century gothic;
+	color:#333;
+	left: 310px;
+	font-size: 13px;
+	margin: 7px;
+	
+}
+a.dark {
+	color:#333;
+	text-decoration:none;
+}
+a.dark:hover {
+	text-decoration:underline;
+}
+p.comment {
+	font-size: 13px;
+	position:absolute;
+	bottom:150px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+article.ramon {
+    font-size: 13px;
+	position:absolute;
+	bottom:140px;
+	font-family: century gothic;
+	color:#333;
+	left: 685px;
+	
+}
+ul.social li {
+	margin: 10px;
+	
+	
+}
+ul.social {
+	list-style-type: none;
+	right: 200px;
+	position:absolute;
+	bottom: 15px;
+	
+}
+
+img.social {
+	width: 30px;
+	height: 30px;
+}
+ul.social li:hover{
+     
+	position:static;
+	
+}
+
+h2.socialmedia{
+		
+	font-size: 15px;
+	position:absolute;
+	bottom:222px;
+	font-family: century gothic;
+	color:#333;
+	right:150px;
+	
+}
+/**footer*/

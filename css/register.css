@@ -1,0 +1,475 @@
+body {
+	width:					1365px;
+	height:					auto;
+	margin:					auto;
+	padding:				auto;
+	overflow-x:				hidden;
+	background: url('imgbg.jpg');
+	
+	
+}
+#content {
+
+
+position:absolute;
+
+
+}
+#contentmid {
+background-color:#FFFFFF;
+box-sizing: border-box;
+border: 1px solid #ccc;
+height:1400px;
+width:    900px;
+position:absolute;
+left: 230px;
+top: 220px;
+
+
+}
+
+#footer {
+	
+	height:300px;
+	width: 1365px;
+    background: #FFFFDB;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+	position:absolute;
+	top:1850px;
+
+}
+article , select, option{
+	font-family: century gothic;
+	color: #414141;
+	font-size: 17px;
+
+
+
+}
+input[type=textbox]{
+	top: 10px;
+	position:absolute;
+	width: 500px;
+	height:40px;
+	border-radius: 3px;
+    padding-left:10px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+
+	}
+
+	
+	
+	input[type=number]{
+	top: 10px;
+	position:absolute;
+	width: 500px;
+	height:40px;
+	border-radius: 3px;
+    padding-left:10px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+
+	}
+
+
+	
+	
+	input[type=password]{
+	top: 10px;
+	position:absolute;
+	width: 500px;
+	height:40px;
+	border-radius: 3px;
+    padding-left: 10px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+	}
+	
+
+	h4.already{
+    right: 90px;
+	font-size: 15px;
+	font-family: century gothic;
+	position: absolute;
+	top:-5px;
+	
+	}
+    
+	a.already {
+		font-size: 15px;
+		color:blue;
+		text-decoration: none;
+		font-family: century gothic;
+		position:absolute;
+		right: 40px;
+		top: 15px;
+	}
+	a.already:hover {
+		text-decoration: underline;
+		
+	}
+	
+h2.signup{
+	position:absolute;
+	font-size: 15px;
+	font-family: century gothic;
+	top: 0px;
+	left:20px;
+}
+.top{
+	
+	position: absolute;
+	top: 150px;
+	left: 230px;
+	background-color: #E2E2E2;
+	height: 70px;
+	width: 900px;
+
+}
+article.free {
+	color: #777;
+	font-family: century gothic;
+	font-size: 13px;
+	position:absolute;
+	top:45px;
+	left:20px;
+}
+.maincontent {
+	left: 30px;
+	position:absolute;
+	top:20px;
+
+}
+h2.acc {
+	font-size: 23px;
+	color: #398dbe;
+	
+	
+}
+
+
+h3.CI{
+	position:absolute;
+	top:70px;
+	font-family:century gothic;
+}
+
+
+
+
+
+article.fname{
+	position:absolute;
+	top:150px;
+}
+input.fname{
+	position:absolute;
+	top:180px;
+	width: 250px;
+}
+
+article.lname{
+	position:relative;
+	top:85px;
+	left:300px;
+}
+input.lname{
+	position:absolute;
+	top:180px;
+	width: 250px;
+	left:300px;
+}
+article.course{
+	position:absolute;
+	top:250px;
+}
+select.course{
+	position:absolute;
+	top:280px;
+	width: 500px;
+	height:40px;
+	border-radius: 3px;
+    padding-left:10px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+
+}
+
+article.studnumber{
+	position:absolute;
+	top:350px;
+	
+}
+input.studnumber{
+	position:absolute;
+	top:380px;
+	width:250px;
+}
+
+article.cadd{
+	position:absolute;
+	top:450px;
+}
+input.cadd{
+	position:absolute;
+	top:480px;	
+	
+}
+
+
+article.cnum{
+	position:absolute;
+	top:550px;
+}
+input.cnum{
+	position:absolute;
+	top:580px;	
+	
+}
+
+
+article.email{
+	position:absolute;
+	top:650px;
+}
+input.email{
+	position:absolute;
+	top:680px;	
+	
+}
+
+article.cemail{
+	position:absolute;
+	top:750px;
+}
+input.cemail{
+	position:absolute;
+	top:780px;	
+	
+}
+
+
+h3.up{
+	position:absolute;
+	top:750px;
+	font-family:century gothic;
+}
+
+article.user{
+	position:absolute;
+	top:850px;
+}
+input.user{
+	position:absolute;
+	top:880px;	
+}
+
+article.pass{
+	position:absolute;
+	top:950px;
+}
+input.pass{
+	position:absolute;
+	top:980px;	
+	
+}
+
+article.cpass{
+	position:absolute;
+	top:1050px;
+}
+	
+
+input.cpass{
+	position:absolute;
+	top: 1080px;	
+
+
+}
+
+
+p {
+	font-size: 15px;
+	position:relative;
+	text-indent:0px;
+	top:1060px;
+	text-align: justify;
+	font-family: century gothic;
+    
+}
+
+
+
+input[type=submit]  {
+	
+	background-color: #0079bc;
+	width: 500px;
+	height:36px;
+	border-radius: 5px;
+    top: 1230px;
+	color: #f1f1f1;
+	font-size: 15px;
+    border: 1px solid ;
+	position:absolute;
+}
+input[type=submit]:hover {
+	
+	background-color: #00509d;
+}	
+input[type=checkbox].checkbox1{
+	
+	position:absolute;
+	top:330px;
+	z-index: 2;
+}
+article.checkbox {
+	position:absolute;
+	top:349px;
+	z-index: 2;
+	left:22px;
+}
+
+input[type=checkbox].checkbox2{
+	
+	position:absolute;
+	top:400px;
+	z-index: 2;
+}
+article.checkbox2 {
+	position:absolute;
+	top:419px;
+	z-index: 2;
+	left:22px;
+}
+script.option {
+	
+	top: 10px;
+	position:absolute;
+	width: 500px;
+	height:40px;
+	border-radius: 3px;
+    padding-left: 10px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+}
+
+
+/*footer*/
+
+
+img.footerlogo{
+	width: 90px;
+	height: 90px;
+	position:absolute;
+	bottom:150px;
+	left: 150px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	
+}
+
+h1.one {
+	
+	font-size: 18px;
+	position:absolute;
+	bottom:70px;
+	font-family: century gothic;
+	color:#333;
+	left: 115px;
+	
+}
+h2.links{
+	
+	font-size: 15px;
+	position:absolute;
+	bottom:220px;
+	font-family: century gothic;
+	color:#333;
+	left: 340px;
+}
+h2.comment {
+	font-size: 15px;
+	position:absolute;
+	bottom:220px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+a.dark {
+	color:#333;
+	text-decoration:none;
+}
+a.dark:hover {
+	text-decoration:underline;
+}
+.nav-footer ul li{
+	
+	position:relative;
+	bottom: -70px;
+	font-family: century gothic;
+	color:#333;
+	left: 310px;
+	font-size: 13px;
+	margin: 7px;
+	
+}
+p.comment {
+	font-size: 13px;
+	position:absolute;
+	top:70px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+article.ramon {
+    font-size: 13px;
+	position:absolute;
+	bottom:140px;
+	font-family: century gothic;
+	color:#333;
+	left: 685px;
+	
+}
+ul.social li {
+	margin: 10px;
+	
+	
+}
+ul.social {
+	list-style-type: none;
+	right: 200px;
+	position:absolute;
+	bottom: 15px;
+	
+}
+
+img.social {
+	width: 30px;
+	height: 30px;
+}
+ul.social li:hover{
+     
+	position:static;
+	
+}
+
+h2.socialmedia{
+		
+	font-size: 15px;
+	position:absolute;
+	bottom:222px;
+	font-family: century gothic;
+	color:#333;
+	right:150px;
+	
+}
+img.logo {
+	
+	position:absolute;
+	left:220px;
+	top:10px;
+}

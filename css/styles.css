@@ -1,0 +1,601 @@
+body {
+	width:					1200px;
+	height:					 auto;
+	margin:					auto;
+	padding:				auto;
+	overflow-x:				hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color:#ccc;
+}
+
+#header { 
+    
+    height:40px;
+	width: 1200px;
+    background: #881614;
+	position:    fixed;
+	Box-shadow: 3px 3px 3px rgba(0, 0, 0, .30);
+    
+	z-index: 3;
+	
+}
+#content {
+background: url('imgbg.jpg');
+position:relative;
+}
+
+#footer {
+	
+	height:300px;
+	width: 1200px;
+    background: #FFFFDB;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+	bottom: 0px;
+}
+div {
+	
+	position:relative;
+}
+
+img.opacity {
+	width:50px;
+	height:30px;
+position:absolute;
+top:-20px;
+right:600px;
+	
+}
+/*header */
+.header-nav li {
+	position:relative;
+	left:  200px;
+	top: -15px;
+	margin: 5px;
+	font-family: calibri;
+	list-style: none;	
+	font-size: 13px;
+	color: #fefefe;	
+	float:left;
+		
+}
+
+a.name {
+
+color:#E9E9E9;
+}
+
+
+li.welcome{
+	font-size:16px;
+	position:absolute;
+	left:70px;
+	top:-10px;
+	z-index:1;
+}
+li.welcome a.name:hover{
+    text-decoration:underline;
+	color:#fefefe;
+}
+a {
+	
+	text-decoration: none;
+	color: #E9E9E9;
+	
+}
+a.sign {
+	color: #E9E9E9;
+	left: 20px;
+	
+}
+.divider {
+	top:5px;
+	margin-left: 80px;
+	left:510px;
+	position:relative;
+	font-size:16px;
+	
+}
+.header-nav a:hover {
+	color: #fefefe;
+
+}
+a.sign:hover {
+	
+	text-decoration: underline;
+	color: #fefefe;
+}
+a.header {
+	position:absolute;
+	top:5px;
+	left:450px;
+	margin-left:80px;
+	font-size:16px;
+	
+}
+img.notif {
+	
+
+	width:35px;
+	height:35px;
+    cursor:pointer;
+	opacity: 0.5;
+	
+}
+
+img.notif:hover {
+	
+    opacity: 1;
+	
+	
+}
+img.notifred {
+    height:35px;
+	width:35px;
+	left:7px;
+	top:-5px;
+	position:absolute;
+	
+}
+.dropdown-content {
+
+	background-color: #3B3A3A;
+	width:80px;
+	left:-20px;
+	color: #fefefe;
+	border:1px solid #ccc;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:2px;
+	padding-top:2px;
+	transition:2s;
+	display:none;
+}
+
+.dropdown:hover .dropdown-content {
+	display:block;
+	
+}
+.dropdown{
+    position:absolute;
+	width:40px;
+	left:305px;
+	top:-15px;
+}
+
+/**headestop*/
+
+
+img.logo {
+	
+		height:130px;
+	width:300px;
+	position: relative;
+	left: 130px;
+	top: 60px;
+	
+}
+.main{
+	z-index:2;
+	position:absolute;
+}
+.main a.blue {
+	
+	font-family:calibri;
+	font-size:13px;
+	color:#fefefe;
+	left:-25px;
+	position:relative;
+	
+	
+	
+}
+.main li {
+	
+	font-size:13px;
+	font-family: century gothic;
+	padding-left:5px;
+	padding-top:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	
+	background-color:#b5152f;
+	
+	
+}
+
+.main ul{
+	position: absolute;
+	top: 80px;
+	left: 130px;
+	width:947px;
+
+
+	background-color: #F6E201;
+
+
+}
+
+.nav ul {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+
+	
+}
+	.nav ul li {
+	display: inline-block;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:30px;
+	padding-right:30px;
+	}
+.nav ul li:hover {
+	background-color: #F6E201;
+	
+}
+.nav a:hover {
+	color: #333;
+	
+}
+a.blue {
+	
+	
+	margin-left:50px;
+	
+	
+}
+a.blue:hover {
+	color:#333;
+
+	font-size: 13px;
+}
+.nav ul li:hover > ul {
+	display:block;
+	background-color: #F6E201;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+
+
+
+}
+.nav ul ul {
+	display: none;
+	position: absolute;
+	background-color:#fefefe;
+	top:35px;
+	width: 947px;
+	left: 0px;
+	font-size: 13px;
+	z-index: 2;
+	height:300px;
+
+}
+
+
+.nav ul ul li {
+	display: block;
+	margin: 20px;
+	background-color:#F6E201;
+	
+
+	
+}
+.nav a{
+	color: #b5152f;
+	
+}
+.nav ul ul :hover {
+
+	
+
+	border-radius: 10px;
+	text-decoration: underline;
+
+}
+
+img.navpics {
+	width:90%;
+	height:93%;
+	position: absolute;
+	top: 10px;
+	left:50px;
+	right:10px;
+}
+
+
+
+#slider{
+    top: 180px;
+	position:relative;
+}
+	#imgs img {
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    width:945px;
+    height:500px;
+    position: absolute;
+    top:-10px;
+    left:130px;
+    transition:2.5s;
+    visibility:hidden;
+	cursor: pointer;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+    
+    /*we want to show only 1 img at the time*/
+}
+
+/*the container */
+#Snav 
+{
+	
+    display:block;
+    width:100%;
+    height:100%;
+    position:relative;
+    top:-50px;
+    left:0;
+	
+}
+/* where the circles are going to be*/
+#SnavUp 
+{
+	
+    display:block;
+    width:100%;
+    height:20%;
+}
+#Scircles 
+{
+    position: absolute;	
+    display:block;
+    width:4%;
+    height:3%;
+    margin-right:5%;
+    margin-top:2%;
+    float:right; 
+	top: 40px;
+	right: 100px;
+	/* is going to be on the right side of the slider*/
+}
+#Scircles ul 
+{   
+
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+}
+#Scircles li
+{
+    /*we don't need the dots*/
+    list-style:none;
+    display:block;
+    background-color:rgba(0, 0, 0, 1);
+    width:25%;
+    height:300%;
+    margin-left:1px;
+    float:left;     /*on the same line*/
+    visibility:hidden;
+    /*we need circles, not squares*/
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+
+}
+/*ok , we are done with the SnavUp*/
+#SnavMiddle 
+{
+	
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;
+	/*this is up to you , where you want the buttons*/
+}
+/*left button*/
+
+#Sleft 
+{
+	top:-30px;
+	left: 95px;
+    width:4%;
+    height:50%;
+    float:left;
+    margin-left:3%;
+    opacity:0.1;
+	position:absolute;
+}
+/*button effect*/
+#Sleft:hover 
+{
+    opacity:0.8;
+}
+#Sright 
+{ 
+    top: -30px;
+    right:90px; 
+    width:4%;
+    height:50%;
+    float:right;
+    margin-right:3%;
+    opacity:0.1;
+	position:absolute;
+}
+#Sright:hover 
+{
+    opacity:0.8;
+}
+
+.line3 {
+   Width:1px;
+   Height:380px;
+   Background: #CDCDCD;
+   Position: absolute;
+   right:395px;
+   top:280px;
+   display:none;
+}
+.space{
+	
+ height:50%;
+}
+
+img.buy {
+	
+   position:absolute;
+   top: 335px;
+   left:850px;
+   width:230px;
+   height:180px;
+      z-index:-1;
+}
+
+img.sell {
+	position:absolute;
+   top: 135px;
+   left:850px;
+   width:230px;
+   height:180px;
+   cursor: pointer;
+   z-index:-1;
+   
+	
+}
+
+.line4{
+   Width: 930px;
+   Height: 1px;
+   Background: #CDCDCD;
+   Position: absolute;
+   left:150px;
+   top:550px;
+      z-index:-1;
+}
+
+
+img.footerlogo{
+	width: 90px;
+	height: 90px;
+	position:absolute;
+	bottom:150px;
+	left: 150px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	
+}
+
+h1.one {
+	
+	font-size: 18px;
+	position:absolute;
+	bottom:70px;
+	font-family: century gothic;
+	color:#333;
+	left: 115px;
+	
+}
+h2.links{
+	
+	font-size: 15px;
+	position:absolute;
+	bottom:-2px;
+	font-family: century gothic;
+	color:#333;
+	left: 340px;
+}
+h2.comment {	
+	font-size: 15px;
+	position:absolute;
+	bottom:-2px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+.nav-footer ul li{
+	
+	position:relative;
+	bottom:-80px;
+	font-family: century gothic;
+	color:#333;
+	left: 310px;
+	font-size: 13px;
+	margin: 7px;
+}
+
+.nav-footer ul li:hover{
+	
+	position:relative;
+	bottom:-80px;
+	font-family: century gothic;
+	color:#333;
+	left: 310px;
+	font-size: 13px;
+	margin: 7px;
+	
+}
+a.dark {
+	color:#333;
+	text-decoration:none;
+}
+a.dark:hover {
+	text-decoration:underline;
+}
+p.comment {
+	font-size: 13px;
+	position:absolute;
+	bottom:150px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+article.ramon {
+    font-size: 13px;
+	position:absolute;
+	bottom:140px;
+	font-family: century gothic;
+	color:#333;
+	left: 685px;
+	
+}
+ul.social li {
+	margin: 10px;
+	
+	
+}
+ul.social {
+	list-style-type: none;
+	right: 200px;
+	position:absolute;
+	bottom: 15px;
+	
+}
+
+img.social {
+	width: 30px;
+	height: 30px;
+}
+ul.social li:hover{
+     
+	position:static;
+	
+}
+
+h2.socialmedia{
+		
+	font-size: 15px;
+	position:absolute;
+	bottom:222px;
+	font-family: century gothic;
+	color:#333;
+	right:150px;
+	
+}
+	/*REGISTER ZONE BOYS! -------------------------------------------------------------------------------->*/
+
+
+

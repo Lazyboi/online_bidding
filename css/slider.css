@@ -1,0 +1,114 @@
+#imgs img 
+{
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    width:10%;
+    height:20%;
+    position:absolute;
+    top:150px;
+    left:200px;
+    transition: 1s;
+    visibility:hidden;
+    /*we want to show only 1 img at the time*/
+}
+/*the container */
+#Snav 
+{
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/* where the circles are going to be*/
+#SnavUp 
+{
+    display:none;
+    width:100%;
+    height:20%;
+}
+#Scircles 
+{
+	z-index:-1;
+    position: absolute;	
+    display:block;
+    width:4%;
+    height:3%;
+    margin-right:5%;
+    margin-top:2%;
+    float:right; 
+	top: 150px;
+	right: 380px;
+	/* is going to be on the right side of the slider*/
+}
+#Scircles ul 
+{   
+
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+}
+#Scircles li
+{
+    /*we don't need the dots*/
+    list-style:none;
+    display:block;
+    background-color:rgba(0, 0, 0, 1);
+    width:25%;
+    height:90%;
+    margin-left:5%;
+    float:left;     /*on the same line*/
+    visibility:hidden;
+    /*we need circles, not squares*/
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+
+}
+/*ok , we are done with the SnavUp*/
+#SnavMiddle 
+{
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;     /*this is up to you , where you want the buttons*/
+}
+/*left button*/
+#Sleft 
+{
+    top:200px;
+	left: 157px;
+    width:2%;
+    height:5%;
+    float:left;
+    margin-left:3%;
+    opacity:0.5;
+	
+	position:absolute;
+}
+/*button effect*/
+#Sleft:hover 
+{
+    opacity:0.8;
+}
+#Sright 
+{ 
+    top:200px;
+    left:300px;
+    width:2%;
+    height:5%;
+    float:left;
+    margin-right:3%;
+    opacity:0.5;
+	position:absolute;
+}
+#Sright:hover 
+{
+    opacity:0.8;
+}
+
+/*now we have to add the info at the bottom of the slider*/

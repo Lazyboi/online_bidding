@@ -1,0 +1,479 @@
+body {
+	width:					1365px;
+	height:					auto;
+	margin:					auto;
+	padding:				auto;
+	overflow-x:				hidden;
+	background: url('imgbg.jpg');
+	
+	
+}
+#content {
+	position:relative;
+	
+}
+#content-mid {
+background-color:#FFFFFF;
+box-sizing: border-box;
+border: 1px solid #ccc;
+height: 680px;
+width:    900px;
+position:absolute;
+left: 230px;
+top: 220px;
+
+}
+#footer {
+	
+	height:300px;
+	width: 1365px;
+    background: #FFFFDB;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+	position:absolute;
+	top:980px;
+
+}
+
+#content-top {
+	
+	position: absolute;
+	top: 150px;
+	left: 230px;
+	background-color: #E2E2E2;
+	height: 70px;
+	width: 900px;
+}
+
+h2 {
+	position:absolute;
+	font-size: 15px;
+	font-family: century gothic;
+	top: 0px;
+	left:20px;
+	
+}
+td ,article {
+	
+	font-size:15px;
+	font-family: century gothic;
+	
+}
+table {
+position:absolute;
+top:50px;
+left:100px;
+
+
+}
+	h4.dont{
+    right: 90px;
+	font-size: 15px;
+	font-family: century gothic;
+	position: absolute;
+	top:-5px;
+	
+	}
+    
+	a.dont {
+		font-size: 15px;
+		color:blue;
+		text-decoration: none;
+		font-family: century gothic;
+		position:absolute;
+		right: 40px;
+		top: 15px;
+	}
+	a.dont:hover {
+		text-decoration: underline;
+		
+	}
+td.category {
+	position:absolute;
+	top:80px;
+}
+td.category2{
+	position:absolute;
+    top:140px;
+}
+td.qty {
+	position:absolute;
+	top:200px;
+}
+
+td.upload {
+	
+	position:absolute;
+	top:330px;
+}
+td.date {
+	position:absolute;
+	top: 420px;
+}
+td.time {
+	
+	position:absolute;
+	top:480px;
+}
+td.submit {
+	position:absolute;
+	top:510px;
+	left: 120px;
+	
+}
+article.there {
+	color: #777;
+	font-family: century gothic;
+	font-size: 13px;
+	position:absolute;
+	top:45px;
+	left:20px;
+	}
+input[type=textbox].what{
+	left:20px;
+	position:relative;
+	width: 400px;
+	height:40px;
+	border-radius: 3px;
+    padding-left:20px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+
+	}
+	
+	input[type=number].qty{
+    position:absolute;
+	width:80px;
+	height:30px;
+	padding-left:15px;
+	font-size:18px;
+	border-radius: 3px;
+	border: 1px solid #E6E4E4;
+	top:195px;
+	left:180px;
+
+	}
+
+input[type=date]{
+	left:180px;
+	position:absolute;
+	top:415px;
+	width: 200px;
+	height:25px;
+	border-radius: 3px;
+    padding-left:20px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+
+	}
+	
+	input[type=time]{
+
+	left:180px;
+	top:475px;
+	position:absolute;
+	width: 200px;
+	height:25px;
+	border-radius: 3px;
+    padding-left:20px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+
+	}
+	
+	input[type=file].image1{
+	left:180px;
+	position:absolute;
+	top:330px;
+	width:200px;
+	height:20px;
+	font-size:11px;
+	z-index: 0;
+    outline:none;
+
+	}
+		input[type=file].image2{
+	left:370px;
+	position:absolute;
+	top:330px;
+	width:200px;
+	height:20px;
+	font-size:11px;
+	z-index: 0;
+    outline:none;
+
+	}
+			input[type=file].image3{
+	left:560px;
+	position:absolute;
+	top:330px;
+	width:200px;
+	height:20px;
+	font-size:11px;
+	outline:none;
+	z-index: 0;
+    
+
+	}
+
+	
+img.upload {
+	
+	width:85px;
+	height:70px;
+	position:absolute;
+	top: 295px;
+	z-index: 1;
+	left: 178px;
+	
+}
+img.upload1 {
+	
+	width:85px;
+	height:70px;
+	position:absolute;
+	top: 295px;
+	z-index: 1;
+	left: 368px;
+	
+}
+img.upload2 {
+	
+	width:85px;
+	height:70px;
+	position:absolute;
+	top: 295px;
+	z-index: 1;
+	left: 558px;
+	
+}
+td.image1 {
+	position:absolute;
+	top:270px;
+	left:190px;
+	color: #76D0E4;
+	font-size: 14px;
+	
+}
+td.image2 {
+	position:absolute;
+	top:270px;
+	left:380px;
+	color: #76D0E4;
+	font-size: 14px;
+	
+}
+
+article.image3 {
+	position:absolute;
+	top:320px;
+	left:670px;
+	color: #76D0E4;
+	font-size: 14px;
+	
+}
+
+article.note{
+	position:absolute;
+	top:425px;
+    
+	color: #FA4F4F;
+	font-size: 13px;
+	left:280px;
+
+	
+	
+}
+
+
+
+
+label {
+	cursor:pointer;
+	
+}
+
+	
+	input[type=submit]{
+		
+	
+	background-color: #0079bc;
+	width: 300px;
+	height:40px;
+	border-radius: 5px;
+    top: 40px;
+	left: 60px;
+	color: #f1f1f1;
+	font-size: 17px;
+    border: 1px solid ;
+	position:absolute;
+	
+	}
+	input[type=submit]:hover {
+		
+		background-color: #00509d;
+	}
+	select#select_id {
+	left:20px;	
+	top:30px;
+	position:relative;
+	width:300px;
+	height:40px;
+	border-radius: 3px;
+    padding-left:20px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+	
+	}
+	select#content_id {
+	top:45px;
+	position:relative;
+	width: 300px;
+	height:40px;
+	border-radius: 3px;
+    padding-left:20px;
+	font-size:16px;
+	border: 1px solid #E6E4E4;
+	left:20px;
+	}
+	
+	
+	td.startprice{
+		
+		position:absolute;
+		top:140px;
+		left:0px;
+	}
+	input[type=number].startprice{
+		position:absolute;
+		top:135px;
+		left:180px;
+		    position:absolute;
+	width:80px;
+	height:30px;
+	padding-left:15px;
+	font-size:18px;
+	border-radius: 3px;
+	border: 1px solid #E6E4E4;
+
+		
+	}
+/*footer*/
+
+
+img.footerlogo{
+	width: 90px;
+	height: 90px;
+	position:absolute;
+	top:58px;
+	left: 150px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	
+}
+
+h1.one {
+	
+	font-size: 18px;
+	position:absolute;
+	bottom:70px;
+	font-family: century gothic;
+	color:#333;
+	left: 115px;
+	
+}
+h2.links{
+	
+	font-size: 15px;
+	position:absolute;
+	top:35px;
+	font-family: century gothic;
+	color:#333;
+	left: 340px;
+}
+h2.comment {
+	font-size: 15px;
+	position:absolute;
+	top:35px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+a.dark {
+	color:#333;
+	text-decoration:none;
+}
+a.dark:hover {
+	text-decoration:underline;
+}
+.nav-footer ul li{
+	
+	position:relative;
+	bottom:-80px;
+	font-family: century gothic;
+	color:#333;
+	left: 310px;
+	font-size: 13px;
+	margin: 7px;
+	
+}
+p.comment {
+	font-size: 13px;
+	position:absolute;
+	bottom:155px;
+	font-family: century gothic;
+	color:#333;
+	left: 600px;
+	
+}
+article.ramon {
+    font-size: 13px;
+	position:absolute;
+	bottom:140px;
+	font-family: century gothic;
+	color:#333;
+	left: 685px;
+	
+}
+ul.social li {
+	margin: 10px;
+	
+	
+}
+
+ul.social {
+	list-style-type: none;
+	right: 200px;
+	position:absolute;
+	top:64px;
+	
+}
+
+img.social {
+	width: 30px;
+	height: 30px;
+}
+ul.social li:hover{
+     
+	position:static;
+	
+}
+
+h2.socialmedia{
+		
+	font-size: 15px;
+	position:absolute;
+	top:34px;
+	font-family: century gothic;
+	color:#333;
+	left:1112px;
+	
+}
+img.logo {
+	
+	position:absolute;
+	left:220px;
+	top:10px;
+}
+	
