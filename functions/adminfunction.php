@@ -3,11 +3,11 @@
 session_start();
 $user=$_POST['username'];
 $pass=$_POST['password'];
-mysqli_connect('localhost','root','') or die (mysqli_error());
-mysqli_select_db('online_bidding') or die ("cannot connect to db");
+$con =mysqli_connect("localhost", "root", "", "online_bidding"); 
+mysqli_select_db($con, 'online_bidding') or die ("cannot connect to db");
 
 
-$select = mysqli_query ("select * from admin_accounts where username = '$user'");
+$select = mysqli_query ($con,"select * from admin_accounts where username = '$user'");
 
 
 $fetch= mysqli_fetch_array($select);
