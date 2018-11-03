@@ -58,14 +58,14 @@ if (empty($_SESSION)){
 else{
 	
 
-mysqli_connect('localhost','root','');
-mysqli_select_db('online_bidding');
+$con=mysqli_connect("localhost", "root", "", "online_bidding");
+mysqli_select_db($con, 'online_bidding');
 
 	
 
 $user=$_SESSION["username"];
 
-$select =mysqli_query("select * from accounts where username = '$user'");
+$select =mysqli_query($con, "select * from accounts where username = '$user'");
 $row=mysqli_fetch_array($select);
 
 $notif =$_SESSION["notif"]=$row['notif'];
@@ -104,12 +104,12 @@ echo'
 <div id = "content">
 <?php
 $user=$_SESSION["usernotif"];
-mysqli_connect('localhost','root','') or die (mysqli_error());
-mysqli_select_db('online_bidding') or die ("cannot connect to db");
+$con=mysqli_connect("localhost", "root", "", "online_bidding");
+mysqli_select_db($con, 'online_bidding') or die ("cannot connect to db");
 
-$updatenotif= mysqli_query("update accounts set notif = 'wala' where username = '$user'");
+$updatenotif= mysqli_query($con, "update accounts set notif = 'wala' where username = '$user'");
 
-$selectnotifications=mysqli_query("select * from notifications where username = '$user' ORDER BY id DESC");
+$selectnotifications=mysqli_query($con, "select * from notifications where username = '$user' ORDER BY id DESC");
 
 
 while($row=mysqli_fetch_array($selectnotifications)){
