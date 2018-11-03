@@ -58,14 +58,14 @@ if (empty($_SESSION)){
 else{
 	
 
-mysqli_connect('localhost','root','');
-mysqli_select_db('online_bidding');
+$con=mysqli_connect("localhost", "root", "", "online_bidding");
+mysqli_select_db($con, 'online_bidding') or die ("cannot connect to db");
 
 	
 
 $user=$_SESSION["username"];
 
-$select =mysqli_query("select * from accounts where username = '$user'");
+$select =mysqli_query($con, "select * from accounts where username = '$user'");
 $row=mysqli_fetch_array($select);
 
 $notif =$_SESSION["notif"]=$row['notif'];
@@ -105,11 +105,11 @@ echo'
 <?php
 
 $user=$_SESSION["username"];
-mysqli_connect('localhost','root','');
-mysqli_select_db('online_bidding');
+$con=mysqli_connect("localhost", "root", "", "online_bidding");
+mysqli_select_db($con, 'online_bidding') or die ("cannot connect to db");
 
 
-$select =mysqli_query("select * from accounts where username = '$user'");
+$select =mysqli_query($con, "select * from accounts where username = '$user'");
 
 $row = mysqli_fetch_array($select);
 $firstname = $row['firstname'];
@@ -162,10 +162,10 @@ echo '<article class = "course">'.$course.'</article>';
 <article class = "yw">Your Wishlists</article>
 <?php
 $userwish=$_SESSION["username"];
-mysqli_connect('localhost','root','');
-mysqli_select_db('online_bidding');
+$con=mysqli_connect("localhost", "root", "", "online_bidding");
+mysqli_select_db($con, 'online_bidding') or die ("cannot connect to db");
 
-$selecta =mysqli_query("select * from accounts where username = '$userwish'");
+$selecta =mysqli_query($con, "select * from accounts where username = '$userwish'");
 
 while ($row=mysqli_fetch_array($selecta)){
 	 echo '<div class ="back"><article class = "wishes">'.$row['wishes'].'</article></div>';

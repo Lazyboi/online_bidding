@@ -75,7 +75,7 @@ mysqli_select_db('online_bidding') or die ("cannot connect to db");
 
 
 
-$selectnotifications=mysqli_query("select * from admin_request ORDER BY id DESC");
+$selectnotifications=mysqli_query($con, "select * from admin_request ORDER BY id DESC");
 
 
 while($row=mysqli_fetch_array($selectnotifications)){
