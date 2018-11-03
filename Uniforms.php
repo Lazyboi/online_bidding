@@ -56,14 +56,14 @@ if (empty($_SESSION)){
 else{
 	
 
-mysqli_connect('localhost','root','');
-mysqli_select_db('online_bidding');
+$con = mysqli_connect("localhost","root","", "online_bidding");
+mysqli_select_db($con, 'online_bidding');
 
 	
 
 $user=$_SESSION["username"];
 
-$select =mysqli_query("select * from accounts where username = '$user'");
+$select =mysqli_query($con, "select * from accounts where username = '$user'");
 $row=mysqli_fetch_array($select);
 
 $notif =$_SESSION["notif"]=$row['notif'];
@@ -155,8 +155,8 @@ echo'
 <?php
 
 	
-mysqli_connect('localhost','root','');
-mysqli_select_db('online_bidding') or die ("cannot connect to db");
+$con = mysqli_connect("localhost","root","", "online_bidding");
+mysqli_select_db($con, 'online_bidding') or die ("cannot connect to db");
 
 
 
@@ -166,7 +166,7 @@ mysqli_select_db('online_bidding') or die ("cannot connect to db");
 
 
                 $qry="select * from sell where category = 'Uniforms' ORDER by id desc";
-                $result=mysqli_query($qry);
+                $result=mysqli_query($con, $qry);
 				
 				
 					if(empty($_SESSION)) {
@@ -208,13 +208,13 @@ $r_seconds = floor ($difference - ($minutes * 60));
 						$message=("You won the bidding item  $what in a price of $price");
 						$adminmessage=("$last won the item $what in a price of $price");
 						$sellermessage=("Your item $what has been sold to $last in a price of $price");
-						$notifications=mysqli_query("update accounts set notif = 'meron' where username = '$last'");
-						$notifseller=mysqli_query("update accounts set notif = 'meron' where username = '$usernotif'");
-						$notifselleruser=mysqli_query("insert into notifications (username,notifications,sender,type,date) values ('$usernotif','$sellermessage','ADMIN','sold','$start')");
-						$notifuser=mysqli_query("insert into notifications (username,notifications,sender,type,date) values ('$last','$message','ADMIN','winner','$start')");
-						$notifadmin=mysqli_query("insert into admin_notif (username,notifications,date,lastlastbidder,sender) values ('$last','$adminmessage','$start','$lastlast','SYSTEM')");
-						$delete = mysqli_query("delete from sell where id = '$ID'");
-						$drop=mysqli_query("DROP TABLE $what");
+						$notifications=mysqli_query($con, "update accounts set notif = 'meron' where username = '$last'");
+						$notifseller=mysqli_query($con, "update accounts set notif = 'meron' where username = '$usernotif'");
+						$notifselleruser=mysqli_query($con, "insert into notifications (username,notifications,sender,type,date) values ('$usernotif','$sellermessage','ADMIN','sold','$start')");
+						$notifuser=mysqli_query($con, "insert into notifications (username,notifications,sender,type,date) values ('$last','$message','ADMIN','winner','$start')");
+						$notifadmin=mysqli_query($con, "insert into admin_notif (username,notifications,date,lastlastbidder,sender) values ('$last','$adminmessage','$start','$lastlast','SYSTEM')");
+						$delete = mysqli_query($con, "delete from sell where id = '$ID'");
+						$drop=mysqli_query($con, "DROP TABLE $what");
 					}
 					else {
 						
@@ -275,13 +275,13 @@ $r_seconds = floor ($difference - ($minutes * 60));
 						$message=("You won the bidding item  $what in a price of $price");
 						$adminmessage=("$last won the item $what in a price of $price");
 						$sellermessage=("Your item $what has been sold to $last in a price of $price");
-						$notifications=mysqli_query("update accounts set notif = 'meron' where username = '$last'");
-						$notifseller=mysqli_query("update accounts set notif = 'meron' where username = '$usernotif'");
-						$notifselleruser=mysqli_query("insert into notifications (username,notifications,sender,type,date) values ('$usernotif','$sellermessage','ADMIN','sold','$start')");
-						$notifuser=mysqli_query("insert into notifications (username,notifications,sender,type,date) values ('$last','$message','ADMIN','winner','$start')");
-						$notifadmin=mysqli_query("insert into admin_notif (username,notifications,date,lastlastbidder,sender) values ('$last','$adminmessage','$start','$lastlast','SYSTEM')");
-						$delete = mysqli_query("delete from sell where id = '$ID'");
-						$drop=mysqli_query("DROP TABLE $what");
+						$notifications=mysqli_query($con, "update accounts set notif = 'meron' where username = '$last'");
+						$notifseller=mysqli_query($con, "update accounts set notif = 'meron' where username = '$usernotif'");
+						$notifselleruser=mysqli_query($con, "insert into notifications (username,notifications,sender,type,date) values ('$usernotif','$sellermessage','ADMIN','sold','$start')");
+						$notifuser=mysqli_query($con, "insert into notifications (username,notifications,sender,type,date) values ('$last','$message','ADMIN','winner','$start')");
+						$notifadmin=mysqli_query($con, "insert into admin_notif (username,notifications,date,lastlastbidder,sender) values ('$last','$adminmessage','$start','$lastlast','SYSTEM')");
+						$delete = mysqli_query($con, "delete from sell where id = '$ID'");
+						$drop=mysqli_query($con, "DROP TABLE $what");
 					}
 					else {
 						
